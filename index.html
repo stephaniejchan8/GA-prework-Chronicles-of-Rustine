@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <link href=”/normalize.css” rel=”stylesheet”>
+  <style>
+    body {
+      background: url("https://i.imgur.com/FVxGprO.jpg");
+      background-size: cover;
+    }
+
+    header {
+      font-family: Verdana;
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      background: rgba(100, 100, 100, 0.3);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 50px;
+      padding: 40px 0px 30px 0px;
+    }
+
+    ul {
+      padding: 20px;
+    }
+
+    li {
+      display: inline;
+      padding: 5px 55px 5px 55px;
+    }
+
+    a {
+      color: rgba(235, 255, 235, 0.9);
+    }
+
+    article {
+      font-family: Calibri;
+      color: rgba(30, 150, 70, 1);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      color: rgba(10, 170, 20, 1);
+    }
+
+    img {
+      border: 2px solid white;
+      border-radius: 20px;
+    }
+
+    button {
+      font-size: 13px;
+      padding: 3px 5px 3px 5px;
+    }
+
+    @media (max-width: 650px) {
+      h1 {
+        font-size: 30px;
+        padding: 10px;
+      }
+
+      ul {
+        padding: 5px;
+      }
+
+      li {
+        display: block;
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Chronicles of Rustine</h1>
+    <ul>
+      <li><a href="#">Van Build</a></li>
+      <li><a href="#">Map</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Glasshouse Mountains</h2>
+    <p>We went to the Glasshouse Mountains and we thought they were very cute! It would have been nice if there was less
+      agriculture around... This made us feel less immersed in nature, it was a constant reminder of our urban
+      existence.</p>
+    <img src="https://i.imgur.com/1mc0CwRl.jpg">
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function () {
+      alert("I like you too!")
+    });
+  </script>
+</body>
